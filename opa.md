@@ -11,6 +11,8 @@ Why?
 _Rego_ language
 
 Good examples here: https://github.com/BouweCeunen/gatekeeper-policies
+Playground: https://play.openpolicyagent.org/
+
 
 JSON/YAML support
 
