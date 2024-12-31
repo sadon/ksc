@@ -18,3 +18,14 @@ securityContext
 securityContext
   runAsNonRoot: true
  ```
+
+## As root
+eq = docker run --privileged (uid=0)
+Allow to change host params, like a hostname etc
+```commandline
+securityContext
+  priviliged: true
+ ```
+## AllowPriviledgeEscalation: false
+AllowPriviledgeEscalation: true #default
+
