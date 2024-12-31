@@ -49,3 +49,7 @@ api-server flag `--encryption-provider-config`
 
 Try to read through etcd-client
 
+ETCDCTL_API=3 etcdctl --cert=/etc/kubernetes/pki/apiserver-etcd-client.crt --cacert=/etc/kubernetes/pki/etcd/ca.crt --key=/etc/kubernetes/pki/apiserver-etcd-client.key \ 
+ get /registry/secrets/default/default-token-abcefg
+
+>> encripted or plaintext secret
