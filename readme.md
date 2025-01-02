@@ -9,4 +9,5 @@
 - [mTLS](./mtls.md)
 - [OPA](./opa.md)
 - [footprint](./footprint.md)
-- 
+- [kubesec](./kubesec.md)
+- [scanning](./scan.md)
