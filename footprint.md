@@ -27,7 +27,7 @@ CMD ["./app"]
 ````
 ---
 
-1. use specific versions for guarantee to run it at the any time 
+1. use specific versions for guarantee to run it at any time 
 FROM ubuntu:22.04
 FROM apline:3.12.1
 golang-go:1.1.1

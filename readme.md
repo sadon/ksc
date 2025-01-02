@@ -11,3 +11,5 @@
 - [footprint](./footprint.md)
 - [kubesec](./kubesec.md)
 - [scanning](./scan.md)
+- [supply-chain](./supply-chain.md)
+- [runtime-analyse](./runtime-analyse.md)
