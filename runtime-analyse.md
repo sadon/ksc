@@ -154,5 +154,47 @@ SECRET=436457657
 
 
 ## Falco
+Installation
+one of:
+https://yandex.cloud/en/docs/managed-kubernetes/operations/applications/falco
+```commandline
+helm pull oci://cr.yandex/yc-marketplace/falco \
+  --version 2.2.5 \
+  --untar && \
+helm install \
+  --namespace <namespace> \
+  --create-namespace \
+  falco ./falco
+```
 
+checking suspicious activity
+
+Rules
+/etc/falco/** falsco_rules.yaml
+```commandline
+- rule:
+  desc:
+  condition:
+  output:
+  priority: NOTICE
+  tags: test
+```
+
+Auditing:
+can check /proc / /etc/ /root directory mounting
+
+
+In exam - pretty sure - to change falco rules file
+
+`/etc/falco/falsco_rules.yaml`
+or 
+to replace by Custom rules
+`/etc/falco/falsco_rules.yaml` -> `/etc/falco/falsco_rules.local.yaml`
+
+and restart falco:
+`systemctl restart falco`
+
+Custom fileds: 
+https://falco.org/docs/reference/rules/supported-fields/
+example `%evt.time`
 
