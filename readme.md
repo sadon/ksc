@@ -13,3 +13,5 @@
 - [scanning](./scan.md)
 - [supply-chain](./supply-chain.md)
 - [runtime-analyse](./runtime-analyse.md)
+- [immutability](./immutability.md)
+- [auditing](./auditing.md)
