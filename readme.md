@@ -17,3 +17,7 @@
 - [auditing](./auditing.md)
 - [kernel-hardering](./kernel.md)
 - [reduce-attack-surface](./reduce-attack-surface.md)
+
+Simulator
+killer.sh 
+https://killercoda.com/killer-shell-cks/scenario/apiserver-crash
