@@ -54,4 +54,20 @@ systemctl disable snapd
 `ps aux`
 
 
+---
+```commandline
+whoami
+>root
+su ubuntu
+whoami
+> ubuntu
+su -i 
+whoami
+> root 
+```
+
+cmd: 
+- adduser
+
+
 
