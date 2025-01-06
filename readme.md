@@ -15,3 +15,4 @@
 - [runtime-analyse](./runtime-analyse.md)
 - [immutability](./immutability.md)
 - [auditing](./auditing.md)
+- [kernel-hardering](./kernel.md)
