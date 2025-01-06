@@ -16,3 +16,4 @@
 - [immutability](./immutability.md)
 - [auditing](./auditing.md)
 - [kernel-hardering](./kernel.md)
+- [reduce-attack-surface](./reduce-attack-surface.md)
