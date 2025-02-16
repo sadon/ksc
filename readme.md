@@ -28,4 +28,17 @@ Page for exam
 - - Don't forget mount /volume + VolumeMount 
 - - use `echo -n` **-n** to generate valid secret key
 - - check errors by 'crictl ps' + api server manifest
-- 
+- - reencrypt `kubectl get secrets -n your-namespace -o json | kubectl replace -f -`
+- [admission-controller](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#imagepolicywebhook)
+- - config files are personal and mounts _inside_ container
+- - Special config
+```commandline
+...
+kind: AdmissionConfiguration
+...
+```
+- - Custom format: [Config](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#imagereview-config-file-format), 
+especially server: 
+```commandline
+ server: https://images.example.com/policy # URL of remote service to query. Must use 'https'.
+```
