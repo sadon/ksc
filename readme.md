@@ -42,3 +42,27 @@ especially server:
 ```commandline
  server: https://images.example.com/policy # URL of remote service to query. Must use 'https'.
 ```
+
+- [NetworkPolicy](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
+- - `namespaceSelector` works by LABELS, be 
+- - better use [kubernetes.io/metadata.name](https://kubernetes.io/docs/concepts/services-networking/network-policies/#targeting-a-namespace-by-its-name) label
+```commandline
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: np
+  namespace: space2
+spec:
+  podSelector: {}
+  policyTypes:
+  - Ingress
+  ingress:
+  - from:
+    - namespaceSelector:
+        #matchLabels:
+        # kubernetes.io/metadata.name: space1
+        matchExpressions:
+        - key: kubernetes.io/metadata.name #See this key
+          operator: In
+          values: ["space1", "backend"]
+```
