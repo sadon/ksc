@@ -21,3 +21,11 @@
 Simulator
 killer.sh 
 https://killercoda.com/killer-shell-cks/scenario/apiserver-crash
+
+
+Page for exam
+- [change encrypt](https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/#write-an-encryption-configuration-file)
+- - Don't forget mount /volume + VolumeMount 
+- - use `echo -n` **-n** to generate valid secret key
+- - check errors by 'crictl ps' + api server manifest
+- 
