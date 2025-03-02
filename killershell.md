@@ -56,3 +56,13 @@ add to egress/ingress field
 authentication:
     mode: "required"
 ````
+
+
+## kubelet config
+additional store
+During cluster creation and upgrade, kubeadm writes its KubeletConfiguration in a ConfigMap called kubelet-config in the kube-system namespace.
+
+```commandline
+kubectl edit cm -n kube-system kubelet-config
+```
+
