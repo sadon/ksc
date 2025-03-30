@@ -5,7 +5,7 @@ https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/
 Why?
  Ex. 
  - has the pod REQUIRED labels?
- - namesapaces must hava label **y**
+ - namespaces must have label **y**
 
 
 _Rego_ language
